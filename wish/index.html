@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+<head>
+    <title>Wish</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Wish shop project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+    
+    
+<body>
+
+<!--          navbar          -->
+    
+    <div class="navbar">
+        <div class="logo"><a href="index.html">Wish</a></div>
+        <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="categories.html">CLOTHES</a>
+            <a href="categories.html">ACCESSORIES</a>
+            <a href="categories.html">LINGERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="imglinks">
+            
+            <div class="iconimg">
+                <a href="#">
+                    <img src="images/shopping-bag.svg" alt="">
+                </a>
+                <span>1</span>
+            </div>
+            <div class="iconimg">
+                <a href="#">
+                    <img src="images/star.svg" alt="">
+                </a>
+                <span>0</span>
+            </div>
+            <div class="iconimg">
+                <a href="#">
+                    <img src="images/avatar.svg" alt="">
+                </a>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="dpointer">
+            <img src="images/down.png">
+        </div>
+        
+        <div class="menubar">
+            
+            <a class="menubtn" onclick="show()" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </a>
+        
+        </div>
+    </div>
+    
+<!--                 sidenavbar                -->
+    
+    <div class="sidenavbar">
+        <div class="logo"><a href="index.html">Wish</a></div>
+        <form method="post" name="form1" class="search">
+            <input type="text" name="search"/>
+            <button type="submit">Search</button>                
+
+        </form>
+        
+        <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="categories.html">CLOTHES</a>
+            <a href="categories.html">ACCESSORIES</a>
+            <a href="categories.html">LINGERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        
+        <div class="closebtn">&times;</div>
+    </div>
+    
+    
+<!--                      carousel                   -->
+    
+    
+    <div class="slider">
+        <div class="slide">
+            <img src="images/home_slider_1.jpg" alt=""/>
+            <div class="caption">
+                <p class="p1">Promo prices</p>
+                <p class="p2">New collection</p>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <img src="images/home_slider_1.jpg" alt=""/>
+            <div class="caption">
+                <p class="p1">Promo prices</p>
+                <p class="p2">New collection</p>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <img src="images/home_slider_1.jpg" alt=""/>
+            <div class="caption">
+                <p class="p1">Promo prices</p>
+                <p class="p2">New collection</p>
+            </div>
+        </div>
+        
+        <a class="prev" onclick="showSlides(n-=1)">&#10094;</a>
+        <a class="next" onclick="showSlides(n+=1)">&#10095;</a>
+        
+        <div class="bottomindicator">
+          <span class="dot" onclick="showSlides(n=0)">01.</span>
+          <span class="empty"></span>  
+          <span class="dot" onclick="showSlides(n=1)">02.</span> 
+          <span class="dot" onclick="showSlides(n=2)">03.</span>
+          
+        </div>
+    
+    </div>
+    
+    
+<!--               2 nd section                  -->
+    
+    
+    <div class="s2container">
+    
+        <p class="smallp">ONLY THE BEST</p>
+        <p class="largep">PROMO PRICES</p>
+        
+        
+        <div class="row">
+            
+            <div class="col">
+                <img src="images/promo_1.jpg" alt=""/>
+                <div class="footercaption"><a href="#">Shop Now</a></div>
+                <div class="centercaption"> 
+                    -30% off <br>
+                    <span>ON ALL BAGS</span>
+                </div>
+            </div>
+            
+            <div class="col">
+                <img src="images/promo_2.jpg" alt=""/>
+                <div class="footercaption"><a href="#">Shop Now</a></div>
+                <div class="centercaption"> 
+                    -30% off <br>
+                    <span>ON COATS &amp; JACKETS</span>
+                </div>
+            </div>
+            
+            <div class="col">
+                <img src="images/promo_3.jpg" alt=""/>
+                <div class="footercaption"><a href="#">Shop Now</a></div>
+                <div class="centercaption"> 
+                    -25% off <br>
+                    <span>ON SANDALS</span>
+                </div>
+            </div>
+        
+        </div>
+        
+        <p class="smallp">ONLY THE BEST</p>
+        <p class="largep">NEW ARRIVALS</p>
+        
+        
+        <div class="row">
+            
+            <div class="col">
+                <img src="images/product_1.jpg" alt=""/>
+                
+                <div class="procol1">
+                    <p><a href="product.html">Woman's Long Dress</a></p>
+                    <p>$45.00</p>
+                </div>
+                
+                <div class="imgdiv">
+                    <img src="images/shopping-bag-white.svg" alt="" style="width: 25px;height: 28px;"/>
+                </div>
+                
+                <div class="plussign">&plus;</div>
+                    
+                
+            </div>
+            
+            <div class="col">
+                <img src="images/product_2.jpg" alt=""/>
+                
+                
+                 <div class="procol1">
+                    <p><a href="product.html">2 Piece Swimsuit</a></p>
+                    <p>$35.00</p>
+                 </div>
+                
+                <div class="imgdiv">
+                    <img src="images/shopping-bag-white.svg" alt="" style="width: 25px;height: 28px;"/>
+                </div>
+                
+                <div class="plussign">&plus;</div>
+                
+               </div>
+            
+            
+            <div class="col">
+                <img src="images/product_3.jpg" alt=""/>
+                
+                
+                <div class="procol1">
+                    <p><a href="product.html">Man Blue Jacket</a></p>
+                    <p>$145.00</p>
+                </div>
+                
+                <div class="imgdiv">
+                    <img src="images/shopping-bag-white.svg" alt="" style="width: 25px;height: 28px;"/>
+                </div>
+                
+                <div class="plussign">&plus;</div>
+                
+        
+        </div>
+            
+            
+        </div>
+        
+        
+        
+        
+        <div class="row2">
+        
+            <div class="col2first">
+            
+                <div class="col2child">
+                    <p class="p1p1">30%<span>off</span></p>
+                    <p class="p2p2">on all shoes</p>
+                    <p class="p3p3">*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.</p>
+                    <a class="chlink1" href="checkout.html" target="_blank">CHECK OUT</a>
+                </div>
+            
+            </div>
+            
+            <div class="col2second">
+                <p class="mix">Mix</p>
+                <p class="and">&amp;</p>
+                <p class="match">Match</p>
+                <p class="p3p3 p3new">*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.</p>
+                <a class="chlink1" href="checkout.html" target="_blank">CHECK OUT</a>
+            </div>
+        
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+<!--                 third section                  -->
+    
+    
+    
+    
+    
+    <div class="s3container">
+    
+        <div class="s3contp1">
+            
+            <a href="" >#Wish</a>
+            <a href="" >#wishinstagram</a>
+            <a href="" >#Wishgirl</a>
+            
+        </div>
+        
+        <p class="s3contp2">*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.</p>
+        
+        <a class="chlink1" href="#" target="_blank">Submit</a>
+        
+        <div class="s3row">
+            <div class="s3img"><img src="images/gallery_1.jpg" alt=""/></div>
+            <div class="s3img"><img src="images/gallery_2.jpg" alt=""/></div>
+            <div class="s3img"><img src="images/gallery_3.jpg" alt=""/></div>
+            <div class="s3img"><img src="images/gallery_4.jpg" alt=""/></div>
+            <div class="s3img"><img src="images/gallery_5.jpg" alt=""/></div>
+            <div class="s3img"><img src="images/gallery_6.jpg" alt=""/></div>
+        </div>
+        
+    </div>
+    
+    <div class="coverdiv">
+        <div class="indiv"><img src="images/gallery_6.jpg" alt=""/></div>
+        <span class="times">&times;</span>
+    </div>
+    
+    
+                                  
+    
+<!--                                    Testemonial                         -->
+    
+    
+    
+    
+    <div class="s2container">
+        <p class="smallp">ONLY THE BEST</p>
+        <p class="largep">TESTIMONIAL</p>
+    </div>
+    
+    
+    <div class="slider">
+    
+        <div class="teslide">
+            
+            <p class="tep1">“Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestibulum ultrices nulla. Aliquam egestas tempor leo.”</p>
+            
+            <div class="clientimage">
+              <img src="images/testimonials.jpg" alt=""/>  
+            </div>
+            
+            <p class="tep2">Christinne Smith</p>
+            <p class="tep3">CLIENT</p>
+            
+        </div>
+        
+        <div class="teslide">
+            
+            <p class="tep1">“Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestibulum ultrices nulla. Aliquam egestas tempor leo.”</p>
+            
+            <div class="clientimage">
+              <img src="images/testimonials.jpg" alt=""/>  
+            </div>
+            
+            <p class="tep2">Christinne Smith</p>
+            <p class="tep3">CLIENT</p>
+            
+        </div>
+        
+        <div class="teslide">
+            
+            <p class="tep1">“Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestibulum ultrices nulla. Aliquam egestas tempor leo.”</p>
+            
+            <div class="clientimage">
+              <img src="images/testimonials.jpg" alt=""/>  
+            </div>
+            
+            <p class="tep2">Christinne Smith</p>
+            <p class="tep3">CLIENT</p>
+            
+        </div>
+        
+    </div>
+    
+    
+    
+                            <!--                               subscribe section                                     -->
+    
+    
+    
+    
+    <div class="subscribediv">
+        
+        <p class="sup1">only the best</p>
+        <p class="sup2">subscribe for a 20%<br>discount</p>
+       
+        
+        <form method="post" name="form2" class="form2">
+            <input type="text" name="search" required/>
+            <button type="submit">Subscribe</button>
+        </form>
+        
+         <p class="sup3">Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestib ulum ultrices nulla. Aliquam egestas tempor leo.</p>
+        
+    </div>
+    
+    
+    
+                            <!--                                  footer                           -->
+    
+    
+    <div class="footer">
+        
+        <div class="fdiv1"><a href="index.html">Wish</a></div>
+        
+        <div class="fdiv2">
+            <a href="index.html">HOME</a>
+            <a href="categories.html">CLOTHES</a>
+            <a href="categories.html">ACCESSORIES</a>
+            <a href="categories.html">LINGERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        
+        <div class="fdiv3">
+            <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fa fa-reddit-alien fa-lg"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+        </div>
+    
+    </div>
+    
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

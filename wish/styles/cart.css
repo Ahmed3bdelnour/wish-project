@@ -1,0 +1,832 @@
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: verdana, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+                                                   /*           navbar             */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    z-index: 1;
+}
+
+
+.logo,.links{
+    float: left;
+}
+
+.imglinks,.menubar{
+    float: right;
+}
+.links,.imglinks{
+    line-height: 2.5;
+    padding: 0 45px 0 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+    transition: all .25s;
+}
+
+.navbar a:hover{
+    color: white;
+    background: #a0a0a0;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.links a{
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.iconimg{
+    width: 20px;
+    position: relative;
+}
+
+.iconimg img{
+    width: 20px;
+}
+
+.iconimg a{
+    width: 20px;
+}
+
+.iconimg span {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background: #898989;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.bar{
+	height: 3px;
+	width: 20px;
+	background:black;
+	margin: 3px 0;
+}
+.menubtn{
+	position: absolute;
+    top: 15px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.iconimg{
+    display: inline;
+}
+.dpointer{
+    position: absolute;
+    top: 25px;
+    right:50px ;
+    padding-top: 9px;
+}
+.dpointer img{
+    width:75px;
+    display: none;
+}
+
+.navbarani{
+    animation: navani 2s;
+}
+
+@keyframes navani{
+    from{margin-top: -77px}
+    to{margin-top:  0; }
+}
+
+                                           /*                        sidenavbar                  */
+
+.sidenavbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 60px 45px;
+    background: white;
+    text-align: right;
+    display: none;
+    z-index: 2;
+    animation: sidenavbaranimation 1.5s ease;
+}
+
+@keyframes sidenavbaranimation{
+    from{max-width: 0;opacity: .3}
+    to{max-width: 100%;opacity: 1}
+}
+
+.sidenavbar .logo,.sidenavbar .search,.sidenavbar .links{
+    display: block;
+    text-align: right;
+    float: none;
+}
+
+.sidenavbar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    display: block;
+    z-index: 100;
+    text-align: right;
+}
+
+.sidenavbar a:hover{
+    color: white;
+    background: #a0a0a0;
+}
+
+
+.sidenavbar .logo{
+    padding: 25px 0; 
+}
+
+.sidenavbar .links{
+    padding: 25px 0; 
+}
+
+
+.sidenavbar .closebtn{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 35px;
+    padding: 8px 8px;
+    margin: -1px 8px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.sidenavbar .closebtn:hover{
+    color: white;
+    background: #a0a0a0; 
+}
+
+.sidenavbar .search{
+    background: #cccccc;
+    padding: 0 10px 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sidenavbar .search input[type="text"]{
+    width: 70%;
+    padding: 5px 0;
+    margin: 2px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    display: inline;
+    background: transparent;
+}
+
+
+.sidenavbar .search input[type="text"]:focus{
+    
+    background: white;
+}
+
+.sidenavbar .search button{
+    display: inline;
+    background: white;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+
+
+                              /*                    woman div                   */
+
+
+
+.wodiv{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background: url("../images/cart.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wodivch{
+    position: absolute;
+    top:20% ;
+    left:0 ;
+    padding: 25px 5%;
+}
+
+.wodivch .sp1{
+    display: block;
+    font-size: 36px;
+    color:white;
+    line-height: 0.75;
+    padding: 15px 15px;
+}
+
+.wodivch a{
+    font-size: 16px;
+	font-weight: 550;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.wodivch .sp2,.wodivch .sp3{
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+
+/*           shopping cart section          */
+
+
+.shcacont{
+	width: 90%;
+	margin: 75px auto;
+}
+
+.leftdiv{
+	float: right;
+	margin-top: -37px;
+}
+
+.leftdiv:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.headdiv{
+	border: 1px solid black;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.headdiv span{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 20px;
+	margin-right: 45px;
+	display: inline-block;
+}
+
+.shrow{
+	border-bottom: 1px solid #898989;
+	padding: 35px 0;
+	
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.shcol{
+	overflow: hidden;
+}
+
+.shcol img{
+	float: left;
+}
+
+.shcol p a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 0;
+	padding-left: 25px;
+	color: black;
+	
+}
+
+.shcol p a:hover{
+		color: #937c6f;
+}
+
+
+
+
+
+.shcol2{
+	text-align: right;
+	position: relative;
+}
+
+.shcol2 span{
+	font-size: 16px;
+	font-weight: 600;
+	color: #937c6f;
+	padding: 15px;
+	margin-right: 45px;
+	display: inline-block;
+}
+
+.shcol2 span:last-child{
+	font-size: 18px;
+	border: 1px solid #937c6f;
+	padding: 8px;
+	cursor: pointer;
+	transition: all .25s;
+}
+
+.shcol2 .last{
+	margin: 0 5px;
+}
+
+
+.shcol2 span:last-child:hover{
+	background: #937c6f;
+	color: white;
+}
+
+
+
+.shcol2 form{
+	display: inline-block;
+}
+
+
+.shcol2 input{
+	display: inline-block;
+    width: 125px;
+    font-size: 16px;
+    padding: 10px 20px;
+	outline: none;
+}
+
+
+
+
+
+.buttonsdiv{
+	width: 100%;
+	padding: 45px 0;
+	border-bottom: 1px solid #937c6f;
+}
+
+
+.buttonsdiv button:not(.lastbtn){
+	border: 1px solid #937c6f;
+	outline: none;
+	font-size: 16px;
+	padding: 15px 25px;
+	background: white;
+	transition: all .25s;
+	cursor: pointer;
+}
+
+.buttonsdiv button:not(.lastbtn):hover{
+	color: white;
+	background: #937c6f;
+}
+
+
+.lastbtn,#couponform button,.proceedbtn{
+	
+	border: 1px solid #937c6f;
+	outline: none;
+	font-size: 16px;
+	padding: 15px 25px;
+	transition: all .25s;
+	float: right;
+	color: white;
+	background:#937c6f; 
+	cursor: pointer;
+}
+
+.lastbtn:hover,#couponform button:hover,.proceedbtn:hover{
+	color:black;
+	background: white;
+}
+
+
+
+
+.couponp{
+	font-size: 32px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+
+#couponform{
+	padding: 35px 0;
+}
+
+#couponform input{
+	font-size: 16px;
+	padding: 15px;
+	width: 50%;
+}
+
+
+.couponcol{
+	margin: 10px;
+}
+
+
+
+.couponcol ul{
+	border: 1px solid #937c6f;
+	list-style: none;
+	padding-left: 0;
+	margin: 35px 0;
+}
+
+
+.couponcol ul li{
+	padding: 15px 25px;
+	font-size: 15px;
+	border-bottom: 1px solid #937c6f;
+}
+
+.couponcol ul li:last-child{
+	border-bottom: none;
+}
+
+
+.couponcol ul li span {
+	float: right;
+}
+
+.proceedbtn{
+	float: none;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*            ul part        */
+
+
+
+.twocrowcol{
+    width: 90%;
+	margin: 75px auto;
+}
+
+.twocrowcol ul{
+    list-style-type: none;
+    border: 1px solid #e0e3e4;	
+	padding: 50px 25px 50px 75px;
+	background: url("../images/cart_nl.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.twocrowcol ul li{
+    padding: 20px 25px;
+    border-bottom: 1px solid #e0e3e4;
+	
+	display: inline-block;
+	margin: 2.5%;
+	width: 40%;
+	background: white;
+}
+
+.twocrowcol ul li:last-child{
+    border-bottom: none;
+}
+
+
+.twocrowcol ul li.bsli img{
+    float: left;
+    overflow: hidden;
+}
+
+.twocrowcol ul li.bsli div{
+    margin-left: 75px;
+}
+
+
+.twocrowcol ul li.bsli p{
+    padding: 5px 15px;
+    color: #937c6f ;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+
+.twocrowcol ul li.bsli .bsp1{
+    font-size: 15px;
+    font-weight: 600;
+    color: #232323;
+    margin-top: 0;
+}
+
+.twocrowcol ul li.bsli .bsp2{
+    font-size: 14px;
+    color: #8a8a8a;
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+
+
+
+
+
+
+
+
+                           /*                                        subscribe section                                */
+
+
+
+
+.subscribediv{
+    width: 90%;
+    margin: 75px auto;
+    padding: 50px 0;
+    background-image:url("../images/cart_nl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sup1{
+    font-size: 14px;
+    font-weight: 600;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.sup2{
+    font-size: 35px;
+    margin-top: -30px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 35px 0;
+    line-height: 2;
+}
+
+
+.form2{
+    background: rgba(204, 204, 204, 0.5);
+    padding: 0 10px 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+.form2 input[type="text"]{
+    width: 80%;
+    padding: 10px 0;
+    margin: 4px 2px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    display: inline;
+    background: transparent
+}
+
+
+.form2 input[type="text"]:focus{
+    
+    background: white;
+}
+
+.form2 button{
+    display: inline;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    float: right;
+    width: 19%;
+    margin: 9px 0;
+    font-size: 16px;
+    color: white;
+    background:#893a0d; 
+}
+
+.form2 button:hover{
+    background: #985128; 
+}
+
+.sup3{
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 35px 5%;
+    line-height: 1.5;
+}
+
+
+.footer{
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+
+.fdiv1,.fdiv2,.fdiv3{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+
+
+.fdiv1 a,.fdiv2 a,.fdiv3 a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 2;
+    transition: all .75s;
+}
+
+.fdiv1 a{
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+
+.fdiv1 a:hover,.fdiv2 a:hover,.fdiv3 a:hover{
+    color: #937c6f;
+}
+
+
+
+/*                           responsive                      */
+
+
+
+@media screen and (max-width:992px){
+    .links{display: none} 
+         
+    .sup2 {font-size: 28px;}
+    
+    .fdiv2 a{padding: 6px;}
+	
+	.billrow, .inputrow{grid-template-columns: 100%;}
+	.inputrowch1{margin-right: 0;}
+	
+	.twocrowcol ul{padding: 0;background: none;}
+	.twocrowcol ul li{display: block;margin: 0;width: 100%;}
+	
+	
+	
+	
+	.product{display: none;}
+	.leftdiv {float: none;margin-top: 0;}
+	.shrow{grid-template-columns: 100%;}
+	.shcol2{text-align: left;padding: 25px 0;}
+    
+}
+
+
+@media screen and (max-width:600px){
+    
+    .dpointer img{display: block;}
+    .imglinks{display: none;}
+    .navbar{padding: 20px;}
+    .navbar a{padding: 12px 10px;}
+    
+    .responsive .imglinks{display: block;position: absolute;top:55px ;right:43px;background: white; }
+    .responsive .imglinks .iconimg span{top: 75%;left: 45%;}
+    .responsive .imglinks .iconimg{display: block;}
+    
+    .sidenavbar{width: 100%;padding: 60px 3%;}
+    .sidenavbar .search input[type="text"]{width: 65%;}
+    
+     .sup2 {font-size: 20px;}
+    
+    .form2 input[type="text"],.sidenavbar .search input[type="text"] {width: 65%;}
+    .form2 button,.sidenavbar .search button {width: 31%;}
+    
+    .sup3{font-size: 14px;}	
+	
+	.billcol2 ul li span{float: none;display: block;line-height: 2.5;}
+	.billcol2{height: auto;padding: 2%;}
+	
+	
+	
+	
+	.headdiv span,.shcol2 span{font-size: 12px;padding: 10px 4%;margin-right: 10%;}
+	.shcol2 span:last-child{font-size: 15px;margin-top: 20px;}
+	.shcol2 input{width: 90px;padding: 10px 3px;}
+	.shcol2 .last{margin-left: 8%;padding: 10px 0%;}
+	.shcol p a{font-size: 14px;}
+	
+	.lastbtn, #couponform button, .proceedbtn{display: block;float: none;margin-top: 25px;}
+	#couponform input{width: 75%;}
+	    
+    
+}
+
+@media screen and (max-width:350px){
+    .dpointer img{display: none;}
+    
+    .navbar a {padding: 7px 6px;}
+    
+    .logo {font-size: 24px;}
+    .responsive .imglinks{display: none;}
+                
+    .form2 input[type="text"],.sidenavbar .search input[type="text"] {width: 100%;background: white;margin: 4px 5px;}
+    .form2 button,.sidenavbar .search button {float: none;display: block;width: 75%;margin: 9px auto;}
+    
+    .fdiv2 a{display: block;}
+	
+	.wodivch .sp1 {padding: 15px 5%;font-size: 32px;}
+	.wodivch a{font-size: 14px;padding: 5px;font-weight: 550;}
+
+	
+	.sp2,.sp3{display: block;}
+	.wodivch a{padding-left: 10px;}
+
+	
+	.billrow input[type="text"], .billrow input[type="email"], .billrow select{font-size: 14px;}
+	.twocrowcol ul li.bsli img{float: none;max-width: 100%;}
+	.twocrowcol ul li.bsli div{margin-left: 5%;margin-top: 5%;}
+	.twocrowcol ul li.bsli p{padding-left: 0;padding-top: 0;}
+	.twocrowcol ul li.bsli span{position: static;}
+	
+	
+	
+	
+	
+	
+	.shcol img{float: none;padding-left: 0;}
+	.shcol p a{padding-left: 0;}
+	.product{display: block;}
+	.headdiv span, .shcol2 span,.shcol2 input{display: block;}
+	.shcol2 .last{margin-left: 0;width: 30px;}
+	.buttonsdiv button:not(.lastbtn){margin-top: 20px;}
+	.couponp{font-size: 24px;}
+	.couponcol ul li span{float: none;display: block;margin-top: 15px;}
+	#couponform input{width: 100%;}
+		
+
+}
+
+
+

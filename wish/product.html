@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+<head>
+<title>Product</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Wish shop project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/product.css">
+</head>
+    
+    
+<body>
+
+<!--          navbar          -->
+    
+    <div class="navbar">
+        <div class="logo"><a href="index.html">Wish</a></div>
+        <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="categories.html">CLOTHES</a>
+            <a href="categories.html">ACCESSORIES</a>
+            <a href="categories.html">LINGERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="imglinks">
+            
+            <div class="iconimg">
+                <a href="#">
+                    <img src="images/shopping-bag.svg" alt="">
+                </a>
+                <span>1</span>
+            </div>
+            <div class="iconimg">
+                <a href="#">
+                    <img src="images/star.svg" alt="">
+                </a>
+                <span>0</span>
+            </div>
+            <div class="iconimg">
+                <a href="#">
+                    <img src="images/avatar.svg" alt="">
+                </a>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="dpointer">
+            <img src="images/down.png">
+        </div>
+        
+        <div class="menubar">
+            
+            <a class="menubtn" onclick="show()" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </a>
+        
+        </div>
+    </div>
+    
+<!--                 sidenavbar                -->
+    
+    <div class="sidenavbar">
+        <div class="logo"><a href="index.html">Wish</a></div>
+        <form method="post" name="form1" class="search">
+            <input type="text" name="search"/>
+            <button type="submit">Search</button>                
+
+        </form>
+        
+        <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="categories.html">CLOTHES</a>
+            <a href="categories.html">ACCESSORIES</a>
+            <a href="categories.html">LINGERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        
+        <div class="closebtn">&times;</div>
+    </div>
+    
+    
+    
+                                      <!--                           woman div                      -->
+    
+    
+    
+    <div class="wodiv">
+    
+        <div class="wodivch">
+            <span class="sp1">Woman</span>
+            <a href="index.html" >HOME </a>
+            <span class="sp2">/ Woman </span>
+            <span class="sp3">/ Swimsuits </span>
+        </div>
+        
+    </div>
+	
+	
+	
+<!--	                           swimsit section                      -->
+    
+	
+	
+	<div class="ssdiv">
+		<a class="ss1" href="categories.html" >Woman's fashion </a>
+		<a class="ss2" href="categories.html">/ Swimsuits </a>
+		<span class="ss3">/ 2 pieces Swimsuits</span>
+	</div>
+	
+	
+	<div class="ssmrow" >
+	
+		<div class="sscol colmargin">
+			
+			<div id="mimg"><img src="images/product_image_1.jpg"/></div>
+			
+			<div class="sscolrow">
+				<div class="sscolrowch"><img src="images/product_image_1.jpg"/></div>
+				<div class="sscolrowch"><img src="images/product_image_2.jpg"/></div>
+				<div class="sscolrowch"><img src="images/product_image_4.jpg"/></div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="colmargin">
+			
+			<p class="sscolp1">2 Piece Swimsuit</p>
+			<p class="sscolp2">$35.00</p>
+			<input type="checkbox" checked disabled /> <span class="sscolsp1"> instock</span>
+			<p class="sscolp3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo. Etiam sed placerat felis. Proin non rutrum ligula.</p>
+			<span class="sscolsp2">Quantity</span>
+			<input type="number" name="number"/><br>
+			<div class="sizecont">
+				<span class="sscolsp3">Size</span>
+				
+				<label class="container">XS
+				  <input type="radio" name="size">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">S
+				  <input type="radio" name="size">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">M
+				  <input type="radio" name="size" checked>
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">L
+				  <input type="radio" name="size">
+				  <span class="checkmark"></span>
+				</label>
+				
+				<label class="container">XL
+				  <input type="radio" name="size">
+				  <span class="checkmark"></span>
+				</label>
+				
+				
+			</div>
+			<a href="#">Add to cart</a>
+		</div>
+		
+	</div>
+    
+	
+<!--	                                   reviews                    -->
+	
+	
+	
+	<div class="review">
+		
+		<p class="rep1">REVIEWS</p>
+		
+		<div class="client">
+			
+			<div class="climg"><img src="images/review_1.jpg"/></div>
+			
+			<div class="clientdiv">
+				<p class="clientname">Maria Smith</p>
+				<p class="date">Nov 29,2017</p>
+				<p class="opinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo. Etiam sed placerat felis. Proin non rutrum ligula. </p>
+			</div>
+			
+		</div>
+		
+		<div class="client">
+			
+			<div class="climg"><img src="images/review_2.jpg"/></div>
+			
+	
+			<div class="clientdiv">
+				<p class="clientname">Anna Jack</p>
+				<p class="date">Jan 10,2018</p>
+				<p class="opinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis quam ipsum. Pellentesque consequat tellus non tortor tempus, id egestas elit iaculis. Proin eu dui porta, pretium metus vitae, pharetra odio. Sed ac mi commodo, pellentesque erat eget, accumsan justo. Etiam sed placerat felis. Proin non rutrum ligula. </p>
+			</div>
+			
+		</div>
+		
+	
+	</div>
+	
+	
+	
+<!--	                          leave a review                         -->
+	
+	
+	
+	<div class="lrecont">
+	
+		<p class="lrp1">Leave a review</p>
+		
+		<form method="post" name="review">
+			<div class="forow">
+				<div class="focol"><input type="text" name="name" placeholder="Name" required/></div>
+				<div class="focol"><input type="email" name="email" placeholder="E-mail" required/></div>
+				<div class="focol"><input type="text" name="subject" placeholder="Subject" required/></div>
+			</div>
+			
+			<textarea name="message" placeholder="Message" required></textarea>
+			
+			<button type="submit">Leave a review</button>
+		
+		</form>
+		
+	
+	</div>
+  
+	
+	
+	
+  
+    
+                            <!--                               subscribe section                                     -->
+    
+    
+    
+    
+    <div class="subscribediv">
+        
+        <p class="sup1">only the best</p>
+        <p class="sup2">subscribe for a 20%<br>discount</p>
+       
+        
+        <form method="post" name="form2" class="form2">
+            <input type="text" name="search" required/>
+            <button type="submit">Subscribe</button>
+        </form>
+        
+         <p class="sup3">Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestib ulum ultrices nulla. Aliquam egestas tempor leo.</p>
+        
+    </div>
+    
+    
+    
+<!--                                                              footer                           -->
+    
+    
+    <div class="footer">
+        
+        <div class="fdiv1"><a href="index.html">Wish</a></div>
+        
+        <div class="fdiv2">
+            <a href="index.html">HOME</a>
+            <a href="categories.html">CLOTHES</a>
+            <a href="categories.html">ACCESSORIES</a>
+            <a href="categories.html">LINGERIE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        
+        <div class="fdiv3">
+            <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fa fa-reddit-alien fa-lg"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+        </div>
+    
+    </div>
+    
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
